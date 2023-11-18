@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #66a5ad;
+    color: #c4dfe6;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 55px;
+}
+
+nav a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #C4DFE6;
+}
+
+.login a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login a:hover {
+    background-color: #0056b3;
+}
+
+
+.item {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+}
+
+
+.servicios{
+    height: 500px;
+    display: flex;
+    background: #66a5ad;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.servicios p{
+    color: #003b46;
+    font-size: 30px;
+}
+
+.servicios img{
+    max-width: 60%;
+}
+
+.Paseo , 
+.Veterinaria,
+.Guarderia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Veterinaria:hover{
+    transition-duration: 1s;
+    transform: scale(1.5);
+}
+
+.Paseo:hover{
+    transition-duration: 1s;
+    transform: scale(1.5);
+}
+
+.Guarderia:hover{
+    transition-duration: 1s;
+    transform: scale(1.5);
+}
+
+.reseña{
+    background-color: #003b46;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.reseñacontenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseñacontenido img{
+    max-width: 150px;
+    align-self: center;
+}
+
+.texto{
+    color: #C4DFE6;
+    width: 600px;
+    text-align: justify;
+}
+
+.reseñacontenido h2, .reseñacontenido p {
+    color: #C4DFE6;
+    text-align: center;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #66a5ad;
+    padding: 0px 40px 40px 0px;
+}
+
+.enlaces{
+    padding: 0 50px;
+    flex: 1;
+}
+
+a {
+    color: #fff;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column; 
+}
+
+.enlaces a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-bottom: 10px; 
+}
+
+.logofinal img {
+    height: 180px;
+}
+
+.imagen img {
+    max-width: 300px; 
+    height: 150px; 
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
